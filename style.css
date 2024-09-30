@@ -36,10 +36,48 @@ nav a{
     display: none;
 }
 
-img{
-    object-fit: contain;
+.image img{
+    display: flex;
+    align-content: center;
+    padding: 5%;
+    max-width: 90%;
+    min-width: 90%;
+    margin: 5%;
 }
 
-footer{
+footer a, footer{
+    display: flex;
+    color:#552400;
+    padding: 1em;
+    font-size: larger;
+}
 
+@media(min-width: 680px){
+    .aside{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+    .aside img{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 20%;
+        min-width: 20%;
+        padding:2em;
+
+    }
+    .caption {
+        text-align: center;
+        color: #552400;
+        font-size: 50px;
+    }
+
+    nav ul, nav ul a{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        background-color: #aa6939;
+        padding: 0.3em;
+    }
 }
